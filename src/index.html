@@ -1,0 +1,444 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="style/reset.css">
+    <link rel="stylesheet" href="style/slick.css">
+    <link rel="stylesheet" href="style/jquery.fancybox.css">
+    <link rel="stylesheet" href="style/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
+    <title>HOTEL</title>
+</head>
+<body>
+<header class="header">
+    <div class="container">
+        <div class="header__top">
+            <div class="header__top-dot"></div>
+            <nav class="menu">
+                <ul class="menu__list">
+                    <li class="menu__list-item">
+                        <a href="#" class="menu__list-link">Booking</a>
+                    </li>
+                    <li class="menu__list-item">
+                        <a href="#" class="menu__list-link">Facilities</a>
+                    </li>
+                    <li class="menu__list-item">
+                        <a href="#" class="menu__list-link">About Us</a>
+                    </li>
+                    <li class="menu__list-item">
+                        <a href="#" class="menu__list-link">Location</a>
+                    </li>
+                    <li class="menu__list-item">
+                        <a href="#" class="menu__list-link">Contact</a>
+                    </li>
+                </ul>
+            </nav>
+            <button class="btnLogin-popup" type="submit">Login</button>
+        </div>
+        <div class="header__content">
+            <div class="container">
+                <div class="header__inner">
+                    <div class="header__find">
+                        <h1 class="find__title">Find your perfect place to stay</h1>
+                        <p class="find__text">Lorem Ipsum is simply dummy text of the printing and typesetting
+                            industry.</p>
+                        <div class="find__video">
+                            <img src="img/video.svg" alt="" class="video__img">
+                            <p class="video__text">Watch video</p>
+                        </div>
+                    </div>
+                    <img src="img/MainPhoto.png" alt="" class="header__img">
+                </div>
+                <div class="search__inner">
+                    <div class="search">
+                        <nav class="search__menu">
+                            <ul class="search__list">
+                                <li class="search__list-item">
+                                    <div class="search__list-img">
+                                        <img src="img/pin1.png" alt="" class="list-img">
+                                        <button type="button" class="search__list-btn">Location</button>
+                                    </div>
+                                    <button type="button" class="search__list-result">United State</button>
+                                </li>
+                                <li class="search__list-item">
+                                    <div class="search__list-img">
+                                        <img src="img/calendar1.png" alt="" class="list-img">
+                                        <button type="button" class="search__list-btn">Check in</button>
+                                    </div>
+                                    <button type="button" class="search__list-result">10 Jun 2022</button>
+                                </li>
+                                <li class="search__list-item">
+                                    <div class="search__list-img">
+                                        <img src="img/calendar2.png" alt="" class="list-img">
+                                        <button type="button" class="search__list-btn">Check out</button>
+                                    </div>
+                                    <button type="button" class="search__list-result">11 Jun 2022</button>
+                                </li>
+                                <li class="search__list-item">
+                                    <div class="search__list-img">
+                                        <img src="img/person1.png" alt="" class="list-img">
+                                        <button type="button" class="search__list-btn">Rooms for</button>
+                                    </div>
+                                    <button type="button" class="search__list-result">1 rooms, 2 guest</button>
+                                </li>
+                            </ul>
+                            <button class="search__menu-btn" type="button" value="Search">
+                                <div class="search__area">
+                                    <img src="img/search.png" alt="">
+                                    <span>Search...</span>
+                                </div>
+                            </button>
+                        </nav>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</header>
+
+<!--FORM-->
+<div class="form__inner">
+    <div class="wrapper">
+        <span class="icon-close"><ion-icon name="close"></ion-icon></span>
+        <div class="form-box login">
+            <h2>Login</h2>
+            <form action="#">
+                <div class="input-box">
+                    <span class="icon"><ion-icon name="mail"></ion-icon></span>
+                    <input type="email" required>
+                    <label>Email</label>
+                </div>
+                <div class="input-box">
+                    <span class="icon"><ion-icon name="lock-closed"></ion-icon></span>
+                    <input type="password" required>
+                    <label>Password</label>
+                </div>
+                <div class="remember-forgot">
+                    <label><input type="checkbox"> Remember me</label>
+                    <a href="#">Forgot Password?</a>
+                </div>
+                <button class="btn" type="submit">Login</button>
+                <div class="login-register">
+                    <p>Don't have an account?<a href="#" class="register-link">Register</a></p>
+                </div>
+            </form>
+        </div>
+        <div class="form-box register">
+            <h2>Register</h2>
+            <form action="#">
+                <div class="input-box">
+                    <span class="icon"><ion-icon name="person"></ion-icon></span>
+                    <input type="text" required>
+                    <label>User Name</label>
+                </div>
+                <div class="input-box">
+                    <span class="icon"><ion-icon name="mail"></ion-icon></span>
+                    <input type="email" required>
+                    <label>Email</label>
+                </div>
+                <div class="input-box">
+                    <span class="icon"><ion-icon name="lock-closed"></ion-icon></span>
+                    <input type="password" required>
+                    <label>Password</label>
+                </div>
+                <div class="remember-forgot">
+                    <label><input type="checkbox">I agree to the terms & conditions </label>
+                </div>
+                <button class="btn" type="submit">Register</button>
+                <div class="login-register">
+                    <p>Already have an account?<a href="#" class="login-link">Login</a></p>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
+<!--END FORM-->
+
+<!--MAIN-->
+
+<main class="main">
+    <section class="popular">
+        <div class="container">
+            <h1 class="popular__title">Our most popular Hotels</h1>
+            <div class="popular__box">
+                <p class="popular__box-text">
+                    Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+                </p>
+                <a href="#" class="popular__box-all">View all</a>
+            </div>
+            <div class="hotel__card">
+                <div class="hotel__card-item">
+                    <img src="img/hotel1.png" alt="" class="hotel__card-img">
+                    <a href="" class="hotel__card-location" title="Google maps link">London NW8 7JT England</a>
+                    <p class="hotel__card-name-hotel"><a href="page.html">Danubius Hotel Regents Park</a></p>
+                    <div class="hotel__starts">
+                        <p class="hotel__card-price">$200 Par Night</p>
+                        <ul class="starts">
+                            <li class="statrs__number"><img src="img/star.png" alt=""></li>
+                            <li class="statrs__number"><img src="img/star.png" alt=""></li>
+                            <li class="statrs__number"><img src="img/star.png" alt=""></li>
+                            <li class="statrs__number"><img src="img/star.png" alt=""></li>
+                            <li class="statrs__number"><img src="img/empty_star.svg" alt=""></li>
+                        </ul>
+                        <p class="hotel__starts-review">4.8</p>
+
+                    </div>
+                </div>
+                <div class="hotel__card-item">
+                    <img src="img/hotel2.png" alt="" class="hotel__card-img">
+                    <a href="" class="hotel__card-location">London NW8 7JT England</a>
+                    <p class="hotel__card-name-hotel">Danubius Hotel Regents Park</p>
+                    <div class="hotel__starts">
+                        <p class="hotel__card-price">$200 Par Night</p>
+                        <ul class="starts">
+                            <li class="statrs__number"><img src="img/star.png" alt=""></li>
+                            <li class="statrs__number"><img src="img/star.png" alt=""></li>
+                            <li class="statrs__number"><img src="img/star.png" alt=""></li>
+                            <li class="statrs__number"><img src="img/star.png" alt=""></li>
+                            <li class="statrs__number"><img src="img/empty_star.svg" alt=""></li>
+                        </ul>
+                        <p class="hotel__starts-review">4.8</p>
+                    </div>
+                </div>
+                <div class="hotel__card-item">
+                    <img src="img/hotel3.png" alt="" class="hotel__card-img">
+                    <a href="" class="hotel__card-location">London NW8 7JT England</a>
+                    <p class="hotel__card-name-hotel">Danubius Hotel Regents Park</p>
+                    <div class="hotel__starts">
+                        <p class="hotel__card-price">$200 Par Night</p>
+                        <ul class="starts">
+                            <li class="statrs__number"><img src="img/star.png" alt=""></li>
+                            <li class="statrs__number"><img src="img/star.png" alt=""></li>
+                            <li class="statrs__number"><img src="img/star.png" alt=""></li>
+                            <li class="statrs__number"><img src="img/star.png" alt=""></li>
+                            <li class="statrs__number"><img src="img/empty_star.svg" alt="" class="empty_star"></li>
+                        </ul>
+                        <p class="hotel__starts-review">4.8</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="provide">
+        <div class="container">
+            <div class="provider__inner">
+                <div class="provide__box">
+                    <h2 class="provide__box-title">We do our best facilities provide you</h2>
+                    <p class="provide__box-text">
+                        Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been
+                        the industry's standard dummy
+                    </p>
+                    <button class="provide__box-btn">Contact now</button>
+                </div>
+                <div class="provider__cards">
+                    <div class="provider__cards-item">
+                        <img src="img/workspace.svg" alt="" class="provider__cards-img">
+                        <p class="provider__cards-text">Private Workspace</p>
+                    </div>
+                    <div class="provider__cards-item">
+                        <img src="img/parking-area.svg" alt="" class="provider__cards-img">
+                        <p class="provider__cards-text">Parking Area</p>
+                    </div>
+                    <div class="provider__cards-item">
+                        <img src="img/breakfast.svg" alt="" class="provider__cards-img">
+                        <p class="provider__cards-text">Breakfast</p>
+                    </div>
+                    <div class="provider__cards-item">
+                        <img src="img/wifi.svg" alt="" class="provider__cards-img">
+                        <p class="provider__cards-text">Free Wifi</p>
+                    </div>
+                    <div class="provider__cards-item">
+                        <img src="img/free.svg" alt="" class="provider__cards-img">
+                        <p class="provider__cards-text">Free Electricity</p>
+                    </div>
+                    <div class="provider__cards-item">
+                        <img src="img/swimming.svg" alt="" class="provider__cards-img">
+                        <p class="provider__cards-text">Swimming Pool</p>
+                    </div>
+                    <div class="provider__cards-item">
+                        <img src="img/exersice.svg" alt="" class="provider__cards-img">
+                        <p class="provider__cards-text">exercise Space</p>
+                    </div>
+                    <div class="provider__cards-item">
+                        <img src="img/other.svg" alt="" class="provider__cards-img">
+                        <p class="provider__cards-text">Other Service</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="discover">
+        <div class="container">
+            <div class="discover__inner">
+                <img src="img/discover.png" alt="" class="discover-img">
+                <div class="discover__history">
+                    <h2 class="discover__history-title">Discover our History</h2>
+                    <p class="discover__history-text">
+                        Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been
+                        the industry's
+                    </p>
+                    <p class="discover__history-text">
+                        Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been
+                        the industry's standard dummy Lorem Ipsum is simply dummy text of the printing and typesetting
+                        industry.
+                    </p>
+                    <button class="discover__history-btn">Explore more</button>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="review">
+        <div class="container">
+            <div class="review__slider">
+                <div class="review__slider-item">
+                    <div class="slider-text">
+                        <p class="review__box-text">Lorem Ipsum is simply dummy text of the printing and typesetting
+                            industry. Lorem Ipsum has been the industry's standard dummy Lorem Ipsum is simply dummy
+                            text of the printing and typesetting industry. Lorem Ipsum is simply dummy text of the
+                            printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy Lorem
+                            Ipsum is simply dummy text of the printing and typesetting industry.</p>
+                        <h3 class="review__box-user">Alexandr Ivchenko</h3>
+                        <h5 class="review__box-user-profession">Businessman</h5>
+                    </div>
+                    <img src="img/human.png" alt="" class="review-img">
+                </div>
+                <div class="review__slider-item">
+                    <div class="slider-text">
+                        <p class="review__box-text">Lorem Ipsum is simply dummy text of the printing and typesetting
+                            industry. Lorem Ipsum has been the industry's standard dummy Lorem Ipsum is simply dummy
+                            text of the printing and typesetting industry. Lorem Ipsum is simply dummy text of the
+                            printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy Lorem
+                            Ipsum is simply dummy text of the printing and typesetting industry.</p>
+                        <h3 class="review__box-user">Alexandr Ivchenko</h3>
+                        <h5 class="review__box-user-profession">Businessman</h5>
+                    </div>
+                    <img src="img/human.png" alt="" class="review-img">
+                </div>
+                <div class="review__slider-item">
+                    <div class="slider-text">
+                        <p class="review__box-text">Lorem Ipsum is simply dummy text of the printing and typesetting
+                            industry. Lorem Ipsum has been the industry's standard dummy Lorem Ipsum is simply dummy
+                            text of the printing and typesetting industry. Lorem Ipsum is simply dummy text of the
+                            printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy Lorem
+                            Ipsum is simply dummy text of the printing and typesetting industry.</p>
+                        <h3 class="review__box-user">Alexandr Ivchenko</h3>
+                        <h5 class="review__box-user-profession">Businessman</h5>
+                    </div>
+                    <img src="img/human.png" alt="" loading="lazy" class="review-img">
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="map">
+        <div class="container">
+            <div class="map__inner">
+                <div class="insert__map">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2482.1182984610627!2d-0.17074313428136348!3d51.52939002963878!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x48761ab93d88066b%3A0x37f972bb961a604d!2zTG9kZ2UgUmQsIExvbmRvbiBOVzggN0pULCDQktC10LvQuNC60L7QsdGA0LjRgtCw0L3QuNGP!5e0!3m2!1sru!2sua!4v1677916740198!5m2!1sru!2sua"
+                            width="1280" height="677" style="border:0;" allowfullscreen="" loading="eager"
+                            referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </div>
+                <div class="map__contact">
+                    <div class="map__contact-text">
+                        <h3 class="contact-title">Location of our Hotelos</h3>
+                        <p class="contact-text">Lorem Ipsum is simply dummy text of the printing and typesetting
+                            industry. Lorem Ipsum has been the industry's </p>
+                    </div>
+                    <div class="map__contact-input">
+                        <label for="">
+                            <input type="text" name="" id="" class="map__contact-enter" placeholder="Enter your email">
+                            <button class="map__contact-btn">Contact</button>
+                        </label>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+</main>
+<!--END MAIN-->
+
+
+<!--FOOTER-->
+<footer class="footer">
+    <div class="container">
+        <div class="footer__inner">
+            <div class="company__detail">
+                <div class="company__detail-box">
+                    <p class="company__detail-text">
+                        Lorem Ipsum is simply dummy text of the printing and typesetting industry lorem fsd.
+                    </p>
+                </div>
+                <div class="company__detail-social">
+                    <img src="img/facebook.svg" alt="" class="company__detail-img">
+                    <img src="img/instagram.svg" alt="" class="company__detail-img">
+                    <img src="img/google.svg" alt="" class="company__detail-img">
+                </div>
+            </div>
+            <div class="home__link">
+                <ul class="home__link-list">
+                    <li class="home__link-list-item">
+                        <a href="" class="home__link-list-link">Home</a>
+                    </li>
+                    <li class="home__link-list-item">
+                        <a href="" class="home__link-list-link">Booking</a>
+                    </li>
+                    <li class="home__link-list-item">
+                        <a href="" class="home__link-list-link">Facilities</a>
+                    </li>
+                    <li class="home__link-list-item">
+                        <a href="" class="home__link-list-link">Location</a>
+                    </li>
+                    <li class="home__link-list-item">
+                        <a href="" class="home__link-list-link">Contact</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="help__link">
+                <ul class="help__link-list">
+                    <li class="help__link-list-item">
+                        <a href="" class="help__link-list-link">Help</a>
+                    </li>
+                    <li class="help__link-list-item">
+                        <a href="" class="help__link-list-link">About Us</a>
+                    </li>
+                    <li class="help__link-list-item">
+                        <a href="" class="help__link-list-link">Help center</a>
+                    </li>
+                    <li class="help__link-list-item">
+                        <a href="" class="help__link-list-link">Privacy policy</a>
+                    </li>
+                    <li class="help__link-list-item">
+                        <a href="" class="help__link-list-link">FAQs</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="get__app">
+                <ul class="get__app-list">
+                    <li class="get__app-list-item">
+                        <a href="" class="get__app-list-link">Get the app</a>
+                    </li>
+                    <li class="get__app-list-item">
+                        <a href="" class="get__app-list-link">iOS app</a>
+                    </li>
+                    <li class="get__app-list-item">
+                        <a href="" class="get__app-list-link">Android app</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</footer>
+<script src="js/login.js"></script>
+<script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+<script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+<script src="js/slick.min.js"></script>
+<script src="js/jquery.fancybox.min.js"></script>
+<script src="js/main.js"></script>
+<script src="js/index.js"></script>
+</body>
+</html>
