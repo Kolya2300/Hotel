@@ -144,7 +144,9 @@ body {
     border: none;
     padding: 0;
 }
-
+.search__list-item .search__list-add{
+    display: inline;
+}
 .search__list-item span {
     display: block;
 }
@@ -161,7 +163,7 @@ body {
     align-items: center;
     background: #24AB70;
     border-radius: 280px;
-    width: 280px;
+    width: 260px;
 }
 
 .search__area {
@@ -191,7 +193,6 @@ body {
 
 .search__list-item > button {
     margin-left: 34px;
-    padding-top: 8px;
 }
 
 .search__list-btn {
@@ -932,7 +933,7 @@ input[type="text"]::placeholder {
     justify-content: center;
     align-items: center;
     overflow: hidden;
-    transform: scale(0);
+    transform: scale(1);
     transition: transform .5s ease, height .2s ease;
 }
 
