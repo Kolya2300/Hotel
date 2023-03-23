@@ -205,6 +205,10 @@ body {
     line-height: 16px;
     font-size: 14px;
 }
+.search__list-result span{
+    display: inline;
+    padding: 0 2px;
+}
 
 .list-img {
     padding-right: 10px;
