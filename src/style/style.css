@@ -384,7 +384,10 @@ main {
     border-radius: 8px;
     flex-direction: column;
 }
-
+.provider__cards-item:hover{
+    transform: scaleY(90%) scaleX(90%);
+    padding: 5px;
+}
 .provider__cards-text {
     color: #222222;
     padding-top: 24px;
@@ -915,13 +918,13 @@ input[type="text"]::placeholder {
     border-radius: 6px;
     cursor: pointer;
     font-size: 1.1em;
-    color: #FFFFFF;
+    color: #000;
     font-weight: 500;
     margin-left: 40px;
     transition: .5s;
 }
 .header__top .btnLogin-popup:hover{
-    background-color: forestgreen;
+    background-color: #F0EAD6;
     color: #222222;
 }
 .wrapper{
