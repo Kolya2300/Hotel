@@ -60,7 +60,11 @@ function getDate() {
     const selectElement = document.getElementById("mySelect");
     const selectedValue = selectElement.value;
     diffInDays = (diffInDays * (+counterPeopleInBar.innerText * selectedValue))* +counterRoomBar.innerText
-    console.log(new Intl.NumberFormat('ru-RU',{
+
+    alert(`Per one night: ${selectedValue} 
+    People: ${+counterPeopleInBar.innerText}
+    Rooms: ${+counterRoomBar.innerText}
+    Total price: ` + new Intl.NumberFormat('ru-RU',{
         style: 'currency',
         currency: 'USD',
     }).format(diffInDays))
