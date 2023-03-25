@@ -1,0 +1,63 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="admin-panel.css">
+    <link rel="stylesheet" href="show.css">
+    <title>Add Date</title>
+</head>
+<body>
+<h1 style="text-align: center; padding: 10px;" >Admin panel</h1>
+<header class="header">
+    <div class="container">
+        <div class="header__top">
+            <div class="header__top-dot"></div>
+            <nav class="menu">
+                <ul class="menu__list">
+                    <li class="menu__list-item">
+                        <a href="change.html" class="menu__list-link">Change Date</a>
+                    </li>
+                    <li class="menu__list-item">
+                        <a href="delete.html" class="menu__list-link">Delete Date</a>
+                    </li>
+                    <li class="menu__list-item">
+                        <a href="Show.html" class="menu__list-link">Show Date</a>
+                    </li>
+                </ul>
+            </nav>
+            <button class="btnLogin-popup" type="submit">LogOut</button>
+        </div>
+    </div>
+</header>
+<div class="wrapper-add-form">
+    <form class="form__add-value">
+        <label for="nameHotel">Name Hotel:</label>
+        <input type="text" id="nameHotel" name="nameHotel"><br>
+
+        <label for="location">Location:</label>
+        <input type="text" id="location" name="location"><br>
+
+
+        <label for="locationURL">Location URL:</label>
+        <input type="text" id="locationURL" name="locationURL"><br>
+
+        <label for="picture">Picture</label>
+        <input type="text" id="picture" placeholder="URL for picture"><br>
+
+        <label for="price">Price $:</label>
+        <input type="text" id="price" name="price" placeholder="Enter price for one night, $"><br>
+
+        <label for="ratingValue">Rating Value:</label>
+        <input type="text" id="ratingValue" name="ratingValue"><br>
+
+        <label for="description">Description:</label>
+        <textarea name="description" id="description"></textarea><br>
+        <button type="submit">Submit</button>
+    </form>
+</div>
+<script src="js/addDate.js"></script>
+</body>
+</html>

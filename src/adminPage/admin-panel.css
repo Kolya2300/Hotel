@@ -1,0 +1,47 @@
+*,
+*::after,
+*::before{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+a{
+    text-decoration: none;
+}
+button{
+    background: transparent;
+    padding: 0;
+    border: none;
+}
+button{
+    background-color: #555555;
+    border-radius: 10px;
+    padding: 5px;
+}
+.change{
+    display: flex;
+    justify-content: space-around;
+    align-content: center;
+}
+#output{
+    display: grid;
+}
+td > button{
+    margin: 10px;
+}
+tr{
+    text-align: center;
+}
+.wrapper-delete,
+.wrapper-change,
+.wrapper-add-form,
+.wrapper-show{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+}
+.form__add-value{
+    display: flex;
+    flex-direction: column;
+}

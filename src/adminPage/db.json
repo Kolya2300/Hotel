@@ -1,0 +1,24 @@
+{
+  "hotel": [
+    {
+      "nameHotel": "Test2",
+      "location": "Kiev",
+      "locationURL": "https:\\\\google.com",
+      "picture": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS7pQUaDV2El5BJe0sxXeLNjwzl2WkwudOkmIuIe94Tcg&s",
+      "price": "200",
+      "ratingValue": "3",
+      "description": "This is the best ",
+      "id": 5
+    },
+    {
+      "nameHotel": "Test2",
+      "location": "Kharkiv",
+      "locationURL": "https://google.com",
+      "picture": "https://mobimg.b-cdn.net/v3/fetch/62/624e27fde335d49e2dd3c6b75c6027a3.jpeg",
+      "price": "200",
+      "ratingValue": "4",
+      "description": "this is the best",
+      "id": 7
+    }
+  ]
+}
