@@ -1,0 +1,133 @@
+*,
+*::after,
+*::before {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+li {
+    list-style-type: none;
+}
+
+html {
+    background-color: white;
+}
+
+body {
+    background-color: white;
+    color: #555555;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 28px;
+    font-family: 'Open Sans', sans-serif;
+}
+.container {
+    max-width: 1300px;
+    padding: 0 10px;
+    margin: 0 auto;
+}
+.popular {
+    margin-bottom: 150px;
+}
+
+.popular__title {
+    font-weight: 600;
+    font-size: 40px;
+    line-height: 60px;
+    color: #000000;
+    margin-bottom: 20px;
+}
+
+.popular__box {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    align-content: center;
+    padding-bottom: 45px;
+}
+
+.popular__box-all {
+    display: inline-block;
+    background: rgba(36, 171, 112, 0.1);
+    border-radius: 280px;
+    padding: 6px 25px;
+}
+
+.hotel__card-item {
+    margin-right: 20px;
+}
+
+.hotel__card-item:last-child {
+    margin-right: 0;
+}
+.hotel__card-item img{
+    width: 411px;
+}
+.hotel__card {
+    display: flex;
+    justify-content: space-between;
+    background-color: #fafafa;
+}
+
+.hotel__starts {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 38px;
+}
+
+.starts {
+    display: flex;
+    align-items: flex-end;
+}
+
+
+/*card detail*/
+.hotel__card-location {
+    margin: 24px 0 15px 16px;
+    font-size: 12px;
+    line-height: 18px;
+    color: #24AB70;
+}
+
+.hotel__card-name-hotel {
+    margin: 0 57px 25px 16px;
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 30px;
+    color: #222222;
+}
+
+.hotel__card-price,
+.hotel__starts-review {
+    line-height: 18px;
+    color: #222222;
+}
+
+/*card detail end*/
+/*down card hotel - price, review, stars*/
+.starts {
+    margin-left: 60px;
+}
+
+.statrs__number {
+    padding-left: 4px;
+}
+
+.statrs__number:last-child {
+    padding-left: 0;
+}
+
+.hotel__starts-review {
+    margin-right: 93px;
+}
+
+.hotel__card-price {
+    margin-left: 26px;
+}
