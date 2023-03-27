@@ -1,0 +1,11 @@
+# Игнорируем временные файлы
+*.tmp
+*.log
+*.bak
+
+# Игнорируем директории
+node_modules/
+dist/
+build/
+.idea/
+.vscode/
