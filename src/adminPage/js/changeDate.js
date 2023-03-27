@@ -24,7 +24,9 @@ fetch("db.json")
             row.appendChild(locationURLCell);
 
             const pictureCell = document.createElement("td");
-            pictureCell.textContent = post.picture;
+            const picture = document.createElement("img");
+            picture.src = post.picture;
+            pictureCell.appendChild(picture);
             row.appendChild(pictureCell);
 
             const priceCell = document.createElement("td");
@@ -70,7 +72,7 @@ fetch("db.json")
                 })
                     .then(response => {
                         if (response.ok) {
-                            alert("Запись изменена!");
+                            alert("Запись изменена! Reload Page");
                             post.nameHotel = nameHotel;
                             post.location = location;
                             post.locationURL = locationURL;
