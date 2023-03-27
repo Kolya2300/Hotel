@@ -22,5 +22,4 @@ btnLogin.addEventListener('click', function (){
 })
 iconClose.addEventListener('click', function (){
     form.style.display = 'none'
-
 })

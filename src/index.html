@@ -166,22 +166,22 @@
         <span class="icon-close"><ion-icon name="close"></ion-icon></span>
         <div class="form-box login">
             <h2>Login</h2>
-            <form action="#">
+            <form action="#" class="checkInfoUserLogin">
                 <div class="input-box">
                     <span class="icon"><ion-icon name="mail"></ion-icon></span>
-                    <input type="email" required>
+                    <input type="email" required id="login">
                     <label>Email</label>
                 </div>
                 <div class="input-box">
                     <span class="icon"><ion-icon name="lock-closed"></ion-icon></span>
-                    <input type="password" required>
+                    <input type="password" required id="password">
                     <label>Password</label>
                 </div>
                 <div class="remember-forgot">
                     <label><input type="checkbox"> Remember me</label>
                     <a href="#">Forgot Password?</a>
                 </div>
-                <button class="btn" type="submit">Login</button>
+                <button class="btn" type="submit" class="login" onclick="test()">Login</button>
                 <div class="login-register">
                     <p>Don't have an account?<a href="#" class="register-link">Register</a></p>
                 </div>
@@ -468,6 +468,7 @@
         </div>
     </div>
 </footer>
+<script src="js/checkInfoUserLogin.js"></script>
 <script src="js/star-ratings.js"></script>
 <script src="js/search.js"></script>
 <script src="js/counterVersion2.js"></script>
