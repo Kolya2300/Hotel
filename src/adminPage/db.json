@@ -30,5 +30,39 @@
       "description": "Fernando Alveraz - this is good hotel",
       "id": 8
     }
+  ],
+  "users": [
+    {
+      "registerFormUserName": "Kolya",
+      "registerFormEmail": "fksl@gmail.com",
+      "registerFormUserPhone": "+2444324",
+      "registerFormUserPassword": "kfskfls",
+      "registerFormUserChecked": "on",
+      "id": 1
+    },
+    {
+      "registerFormUserName": "Kolya",
+      "registerFormEmail": "fksl@gmail.com",
+      "registerFormUserPhone": "+2444324",
+      "registerFormUserPassword": "kfskfls",
+      "registerFormUserChecked": "on",
+      "id": 2
+    },
+    {
+      "registerFormUserName": "Kolya",
+      "registerFormEmail": "fslkd@gmail.com",
+      "registerFormUserPhone": "+34329023",
+      "registerFormUserPassword": "jfslkjdflk",
+      "registerFormUserChecked": "on",
+      "id": 3
+    },
+    {
+      "registerFormUserName": "Kolya",
+      "registerFormEmail": "kovalenkokola4@gmail.com",
+      "registerFormUserPhone": "+3805234832",
+      "registerFormUserPassword": "ffksdlkfj",
+      "registerFormUserChecked": "on",
+      "id": 4
+    }
   ]
 }

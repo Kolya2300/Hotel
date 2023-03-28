@@ -1,4 +1,5 @@
 const checkInfoUserLogin = document.querySelector('.checkInfoUserLogin');
+
 checkInfoUserLogin.addEventListener('submit', (event)=>{
     event.preventDefault()
     const login = checkInfoUserLogin.elements.login.value;
@@ -6,6 +7,7 @@ checkInfoUserLogin.addEventListener('submit', (event)=>{
     if (login === 'admin@gmail.com' && password === 'admin') {
         window.location.href = 'adminPage/Show.html';
     } else {
-        window.location.href = 'google.com';
+
+        window.location.href = '../profileUser.html';
     }
 })

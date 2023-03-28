@@ -189,24 +189,29 @@
         </div>
         <div class="form-box register">
             <h2>Register</h2>
-            <form action="#">
+            <form action="#" class="register__form">
                 <div class="input-box">
                     <span class="icon"><ion-icon name="person"></ion-icon></span>
-                    <input type="text" required>
+                    <input type="text" required class="register__form-user-name">
                     <label>User Name</label>
                 </div>
                 <div class="input-box">
                     <span class="icon"><ion-icon name="mail"></ion-icon></span>
-                    <input type="email" required>
+                    <input type="email" required class="register__form-email">
                     <label>Email</label>
                 </div>
                 <div class="input-box">
+                    <span class="icon"><ion-icon name="call"></ion-icon></span>
+                    <input type="tel" required class="register__form-tel">
+                    <label>Number Phone</label>
+                </div>
+                <div class="input-box">
                     <span class="icon"><ion-icon name="lock-closed"></ion-icon></span>
-                    <input type="password" required>
+                    <input type="password" required class="register__form-password">
                     <label>Password</label>
                 </div>
                 <div class="remember-forgot">
-                    <label><input type="checkbox">I agree to the terms & conditions </label>
+                    <label><input type="checkbox" class="register__form-checked">I agree to the terms & conditions </label>
                 </div>
                 <button class="btn" type="submit">Register</button>
                 <div class="login-register">
@@ -469,6 +474,7 @@
     </div>
 </footer>
 <script src="js/checkInfoUserLogin.js"></script>
+<script src="js/profile.js"></script>
 <script src="js/star-ratings.js"></script>
 <script src="js/search.js"></script>
 <script src="js/counterVersion2.js"></script>
