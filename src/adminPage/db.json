@@ -63,6 +63,13 @@
       "registerFormUserPassword": "ffksdlkfj",
       "registerFormUserChecked": "on",
       "id": 4
+    },
+    {
+      "name": "Николай",
+      "email": "kovalenkokola69@gmail.com",
+      "phone": "+380684243",
+      "password": "123",
+      "id": 5
     }
   ]
 }

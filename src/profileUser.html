@@ -8,7 +8,24 @@
     <title>Profile</title>
 </head>
 <body>
-<h1>Welcome, <span id="loginFormEmail"></span>!</h1>
-<script src="js/user.js"></script>
+<h1>User Profile</h1>
+<div id="user-info"></div>
+<button onclick="logout()">Logout</button>
+
+<script>
+    const userInfo = document.getElementById('user-info');
+    const user = JSON.parse(localStorage.getItem('user'));
+
+    if (user) {
+        userInfo.innerHTML = `<p>Name: ${user.name}</p><p>Phone: ${user.phone}</p><p>Email: ${user.email}</p>`;
+    } else {
+        window.location.href = 'index.html';
+    }
+
+    function logout() {
+        localStorage.removeItem('user');
+        window.location.href = 'index.html';
+    }
+</script>
 </body>
 </html>
