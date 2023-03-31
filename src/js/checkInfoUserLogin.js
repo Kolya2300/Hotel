@@ -21,30 +21,26 @@ checkInfoUserLogin.addEventListener('submit', (event) => {
                 alert('Invalid email or password')
             }
         })
-        const registerForm = document.querySelector('.register__form')
-        registerForm.addEventListener("submit", async (event) => {
-            event.preventDefault();
+        const registerForm = document.querySelector('.register__form');
+        registerForm.addEventListener('submit', async (e)=>{
+            e.preventDefault();
             const name = document.querySelector('.register__form-user-name').value;
             const email = document.querySelector('.register__form-email').value;
             const phone = document.querySelector('.register__form-tel').value;
             const password = document.querySelector('.register__form-password').value;
             const newUser = {name, email, phone, password};
-            /*fetch data, adding to db.json */
-            await fetch("http://localhost:3000/users", {
+
+            const response = await fetch('http://localhost:3000/users', {
                 method: 'POST',
-                headers: {'Content-Type': 'application/json'},
+                headers: {'Content-Type':'application/json'},
                 body: JSON.stringify(newUser),
-            })
-                .then(response =>{
-                if (response.ok) {
-                    console.log('some')
-                    localStorage.setItem('user', JSON.stringify(newUser));
-                    window.location.href = './profileUser.html';
-                } else {
-                    alert('Registration failed.');
-                }
-            })
-                .catch(error => console.error(error))
+            });
+            if(response.ok){
+                localStorage.setItem('user', JSON.stringify(newUser));
+                window.location.href = './profileUser.html';
+            }else{
+                alert('Error to register')
+            }
 
         })
     }
