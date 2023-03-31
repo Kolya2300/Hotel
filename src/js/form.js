@@ -1,5 +1,4 @@
 const registerForm = document.querySelector('.register__form');
-console.log('registerForm',registerForm)
 registerForm.addEventListener('submit', async (e)=>{
 
     e.preventDefault();
