@@ -1,4 +1,7 @@
 const registerForm = document.querySelector('.register__form');
+
+
+
 registerForm.addEventListener('submit', async (e)=>{
 
     e.preventDefault();
@@ -16,6 +19,7 @@ registerForm.addEventListener('submit', async (e)=>{
     if(response.ok){
         localStorage.setItem('user', JSON.stringify(newUser));
         window.location.href = './profileUser.html';
+
     }else{
         alert('Error to register')
     }

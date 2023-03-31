@@ -12,5 +12,4 @@ function logout() {
 }
 function goBack() {
     window.location.href = 'index.html';
-    const profileLogo = document.querySelector('.btnLogin-popup').innerHTML = 'Lol'
 }

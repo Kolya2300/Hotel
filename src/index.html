@@ -473,8 +473,18 @@
         </div>
     </div>
 </footer>
+<script>
+    const user = JSON.parse(localStorage.getItem('user'));
+    const profileLogo = document.querySelector('.btnLogin-popup');
+    if (user) {
+        profileLogo.innerHTML = 'Profile';
+        profileLogo.addEventListener('click', ()=>{
+            window.location.href = 'profileUser.html'
+        })
+    }
+</script>
 <script src="js/checkInfoUserLogin.js"></script>
-<script src="js/user.js"></script>
+<!--<script src="js/user.js"></script>-->
 <script src="js/form.js"></script>
 <script src="js/star-ratings.js"></script>
 <script src="js/search.js"></script>
