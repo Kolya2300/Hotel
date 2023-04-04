@@ -23,3 +23,14 @@ btnLogin.addEventListener('click', function (){
 iconClose.addEventListener('click', function (){
     form.style.display = 'none'
 })
+
+const user = JSON.parse(localStorage.getItem('user'));
+const profileLogo = document.querySelector('.btnLogin-popup');
+if (user) {
+    profileLogo.innerHTML = 'Profile';
+    {profileLogo.addEventListener('click', ()=>{
+        form.style.display = 'none'
+        window.location.href = 'profileUser.html'
+    })}
+
+}

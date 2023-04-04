@@ -899,6 +899,11 @@ input[type="text"]::placeholder {
 
 
 /*FORM*/
+
+#locationInput{
+    height: 20px;
+    width: 130px;
+}
 .form__inner{
     position: fixed;
     top: 200px;
@@ -1084,7 +1089,26 @@ input[type="text"]::placeholder {
     z-index: 1;
 }
 /*FORM END*/
-
+/*Search Box*/
+.search__box{
+    max-width: 100%;
+    min-height: 100%;
+    z-index: 9999;
+    background-color: #f5f2f2;
+    padding-bottom: 10px;
+}
+.div{
+    display: flex;
+    flex-direction: row-reverse;
+}
+.hotel__card-img-search{
+    width: 400px;
+}
+.hotel__card-img-search,
+hotel__card-location-search{
+    display: block;
+}
+/*Search Box END*/
 
 
 /*MEDIA Query*/

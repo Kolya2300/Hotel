@@ -65,11 +65,7 @@
                                         <img src="img/pin1.png" alt="" class="list-img">
                                         <button type="button" class="search__list-btn">Location</button>
                                     </div>
-                                    <select id="mySelect">
-                                        <option value="100">Hostel</option>
-                                        <option value="200">Hotel</option>
-                                        <option value="300">Premium</option>
-                                    </select>
+                                    <input type="text" id="locationInput" placeholder="Enter location">
                                 </li>
                                 <li class="search__list-item">
                                     <div class="search__list-img">
@@ -222,6 +218,15 @@
     </div>
 </div>
 <!--FORM END-->
+<!--Search box-->
+<div class="container">
+    <div class="search__box" style="display: none">
+        <div class="div"><button class="search__btn-close">Закрыть</button></div>
+        <div class="search__box-item"></div>
+    </div>
+</div>
+
+<!--Search box END-->
 <!--MAIN-->
 
 <main class="main">
@@ -473,18 +478,8 @@
         </div>
     </div>
 </footer>
-<script>
-    const user = JSON.parse(localStorage.getItem('user'));
-    const profileLogo = document.querySelector('.btnLogin-popup');
-    if (user) {
-        profileLogo.innerHTML = 'Profile';
-        profileLogo.addEventListener('click', ()=>{
-            window.location.href = 'profileUser.html'
-        })
-    }
-</script>
+
 <script src="js/checkInfoUserLogin.js"></script>
-<!--<script src="js/user.js"></script>-->
 <script src="js/form.js"></script>
 <script src="js/star-ratings.js"></script>
 <script src="js/search.js"></script>
